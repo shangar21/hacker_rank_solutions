@@ -11,7 +11,7 @@ def queensAttack(n, k, r_q, c_q, obstacles):
         while True:
             row += i[0]
             col += i[1]
-            if ([row,col] in obstacles) or (0 > row) or (row > n ) or (0 > col) or (col > n):
+            if ([row,col] in obstacles) or (0 >= row) or (row > n ) or (0 >= col) or (col > n):
                 break
 
             attacks += 1
@@ -27,6 +27,7 @@ def queensAttack(n, k, r_q, c_q, obstacles):
         row = r_q
         col = c_q
         while (np.add(np.array([row,col]), np.array(i)).tolist() not in obstacles) and (row > 0) and (col > 0) and (row <= n) and (col <= n):
+        	print(np.add(np.array([row,col]), np.array(i)).tolist())
         	row += i[0]
         	col += i[1]
         	attacks += 1
