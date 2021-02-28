@@ -19,6 +19,7 @@ def organizingContainers(container):
 
 	if sorted(container_space) == sorted(ball_count):
 		return 'Possible'
+		
 	return 'Impossible'
 
 
