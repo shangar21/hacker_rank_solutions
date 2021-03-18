@@ -14,7 +14,7 @@ def biggerIsGreater(w):
 
 	i = len(w) - 1
 
-	while i > 0 and w[k - 1] <= w[i]:
+	while i > 0 and w[i] <= w[k-1]:
 		i -= 1
 
 	c = list(w)
