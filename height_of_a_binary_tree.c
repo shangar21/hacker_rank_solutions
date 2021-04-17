@@ -11,18 +11,16 @@ struct node {
 
 int get_count(struct node* root){
 
-	int count = 0;
-
 	if root == NULL{
-		return 0
+		return 0;
 	}
 
-	return 1 + max(get_count(root->left), get_count(root->right))
+	return 1 + max(get_count(root->left), get_count(root->right));
 }
 
 int getHeight(struct node* root){
 
-	return get_count(root) - 1
+	return get_count(root) - 1;
 
 }
 
