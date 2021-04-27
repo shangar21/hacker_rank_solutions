@@ -29,7 +29,7 @@ q = int(input())
 queries = []
 
 for i in range(q):
-	queries.append([int(i) for i in ' '.join([*input()]).split()])
+    v.append([int(i) for i in ' '.join([input()]).split()])
 
 table = construct_table(arr)
 
@@ -37,5 +37,3 @@ table = construct_table(arr)
 for i in queries:
 	l,r = i[0],i[1]
 	print(find_min(l,r))
-
-
